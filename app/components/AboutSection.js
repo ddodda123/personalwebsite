@@ -6,10 +6,10 @@ export default function AboutSection() {
           <div id="left">
             <div id="frame" className="firstFrame" data-aos="fade-up">
               <div className="imageBox">
-                <img src="/images/ai.png" id="ai" style={{ display: 'block', margin: '0 auto' }} />
+                <img src="/images/ai.png" id="ai" style={{ display: 'block', margin: '0 auto' }} alt="AI Illustration" />
               </div>
               <div className="imageBox">
-                <img src="/images/cs.png" id="cs" style={{ display: 'block', margin: '0 auto' }} />
+                <img src="/images/cs.png" id="cs" style={{ display: 'block', margin: '0 auto' }} alt="CS Illustration"/>
               </div>
             </div>
             <div id="textBlock" data-aos="fade-right">
@@ -32,4 +32,3 @@ export default function AboutSection() {
       </div>
     );
   }
-  
