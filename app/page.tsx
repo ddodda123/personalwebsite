@@ -5,7 +5,6 @@ import AboutSection from './components/AboutSection';
 export default function Home() {
   return (
     <>
-      <Header />
       <HeroSection />
       <AboutSection />
     </>
