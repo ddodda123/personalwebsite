@@ -6,9 +6,9 @@ export default function Bar(){
           <h2 id="logo">Dhruv Dodda</h2>
           <div id="headerIcons">
             <div id="headerIcon">Home</div>
-            <div id="headerIcon">Projects</div>
             <div id="headerIcon">About</div>
-            <div id="headerIcon">Contact Information</div>
+            <div id="headerIcon">Experiences</div>
+            <div id="headerIcon">Contact Me</div>
           </div>
         </div>
     )
