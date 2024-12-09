@@ -2,7 +2,7 @@ import Bar from './Bar'
 export default function AboutSection() {
     return (
       <div id="second" className="snap">
-        
+        <Bar></Bar>
         <h1 id="secondHero">More Information</h1>
         <div id="demoContent">
           <div id="left">

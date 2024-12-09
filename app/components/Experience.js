@@ -1,3 +1,4 @@
+import Bar from './Bar'
 import React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -47,6 +48,7 @@ const experiences = [
 export default function ExperienceTimeline() {
   return (
     <div className="bg-white min-h-screen flex flex-col items-start p-10">
+    <Bar></Bar>
       {/* Header */}
       <h1
         id="hero"
