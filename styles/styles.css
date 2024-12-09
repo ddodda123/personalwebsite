@@ -1,4 +1,4 @@
-/* YOUR STYLES HERE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,6 +7,41 @@ body {
     padding: 5px 10px;
     display: flex;
     align-items: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.sticky-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between; /* Space between the logo and navigation items */
+  align-items: center; /* Vertically center the content */
+  padding: 15px 30px; /* Add padding for spacing */
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+}
+
+.sticky-bar a {
+  color: #8affb9; /* Matches the text shadow in the hero section */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px; /* Spacing between navigation items */
+  transition: color 0.3s ease;
+}
+
+.sticky-bar a:hover {
+  color: #ffffff; /* White text on hover for better visibility */
+}
+
+.sticky-bar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8affb9;
+  text-shadow: 0 2px 5px rgba(92, 182, 129, 0.8);
 }
 
 .menu-item{
@@ -166,7 +201,7 @@ h1 {
 #description {
   color: #ececec;
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins", sans-serif;
   padding-top: 30px;
   width: 80%;
 }
@@ -189,7 +224,7 @@ h1 {
 #startText {
   color: #000336;
   text-align: center;
-  font-family: Poppins;
+  font-family: "poppins";
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -217,7 +252,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: Inter;
+  font-family: "poppins";
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -310,7 +345,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Inter;
+  font-family: "poppins";
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
@@ -320,7 +355,7 @@ h1 {
 
 #textBlock p {
   color: #ececec;
-  font-family: Poppins;
+  font-family: "poppins";
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -380,4 +415,76 @@ h1 {
   text-align: center;
   align-items: center;
   font-family: "poppins", sans-serif;
+}
+
+/* Parent wrapper for social links */
+.social-links {
+  display: flex; /* Flexbox for horizontal layout */
+  flex-direction: row; /* Ensure horizontal row layout */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Vertically align the icons */
+  gap: 24px; /* Increase space between the icons */
+  margin-top: 20px; /* Add margin above the row */
+}
+
+/* Wrapper for each social link */
+.social-link-wrapper {
+  position: relative; /* Required for positioning pseudo-elements */
+  display: inline-flex; /* Inline flex for better alignment */
+  justify-content: center; /* Center the icon */
+  align-items: center; /* Vertically center the icon */
+  padding: 10px; /* Add padding for a larger clickable area */
+  border-radius: 50%; /* Optional: make it circular */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for each link */
+.social-link-wrapper:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Icon styling */
+.social-icon {
+  font-size: 2rem; /* Increase size of icons */
+  color: #8affb9; /* Set default color for icons */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+}
+
+/* Icon color change on hover */
+.social-icon:hover {
+  color: #ffffff; /* Change to white on hover */
+  transform: translateY(-3px); /* Move icon slightly upwards */
+}
+
+/* Optional: Line styling below icons (if used) */
+.icon-line {
+  display: block;
+  width: 2px;
+  height: 0;
+  background-color: #8affb9;
+  transition: height 0.3s ease, background-color 0.3s ease;
+  margin-top: 4px; /* Space between icon and line */
+}
+
+/* Increase line height on hover */
+.social-link-wrapper:hover .icon-line {
+  height: 10px; /* Extend line height */
+  background-color: #ffffff; /* Change color of the line */
+}
+
+/* Fade-in animation for social links */
+.fade-in-element {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

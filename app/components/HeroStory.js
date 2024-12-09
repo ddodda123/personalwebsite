@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Contact from './Contact'
 export default function HeroStory(){
     return(
         <div id="main">
@@ -15,6 +15,7 @@ export default function HeroStory(){
             <p id="description" data-aos="fade-up">
             Welcome to my website!
             </p>
+            <Contact></Contact>
           </div>
         </div>
     )

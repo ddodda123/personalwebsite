@@ -1,11 +1,10 @@
 import Profile from './ProfileImage';
 import HeroStory from './HeroStory';
-import Bar from './Bar';
+import StickyBar from './StickyBar';
 
 export default function HeroSection() {
     return (
         <div id="first">
-          <Bar />
             <div
             id="contentContainer"
             style={{
