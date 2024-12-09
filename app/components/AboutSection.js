@@ -1,6 +1,8 @@
+import Bar from './Bar'
 export default function AboutSection() {
     return (
       <div id="second" className="snap">
+        
         <h1 id="secondHero">More Information</h1>
         <div id="demoContent">
           <div id="left">
