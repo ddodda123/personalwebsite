@@ -1,6 +1,5 @@
 "use client";
 
-import Bar from "./Bar";
 import React from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -9,7 +8,6 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import StickyBar from './StickyBar'
 const experiences = [
   {
     name: "Software Engineer Intern · Meta",

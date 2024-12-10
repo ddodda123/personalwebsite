@@ -1,6 +1,5 @@
 import Profile from './ProfileImage';
 import HeroStory from './HeroStory';
-import StickyBar from './StickyBar';
 
 export default function HeroSection() {
     return (
