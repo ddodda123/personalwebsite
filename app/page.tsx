@@ -11,9 +11,15 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="pt-20"> {/* Add padding to prevent content overlap */}
-        <HeroSection />
-        <Experience />
-        <Contact />
+        <section id="hero">
+          <HeroSection />
+        </section>
+        <section id="experiences">
+          <Experience />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
     </div>
   );
